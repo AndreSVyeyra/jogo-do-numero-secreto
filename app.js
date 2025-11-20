@@ -5,7 +5,8 @@ function exibirTextoNaTela(tag,texto) {
 }
 
  function verificarChute() {
-    console.log(numeroSecreto);
+    const chute = document.querySelector("input").value;
+    console.log(chute == numeroSecreto)
  };
 
 
