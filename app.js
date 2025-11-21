@@ -22,11 +22,17 @@ function exibirTextoNaTela(tag,texto) {
         }else {
             exibirTextoNaTela("p","O número secreto é maior");
         }
-        tentativa++
+        tentativa++;
+        limpaCampo();
     }
  }
 
 function gerarNumeroAleatorio(){
     const numeroAleatorio = parseInt(Math.random() * 10 + 1);
     return numeroAleatorio;
+}
+
+function limpaCampo() {
+   chute = document.querySelector("input");
+   chute.value = " ";
 }
