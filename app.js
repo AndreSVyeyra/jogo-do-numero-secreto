@@ -16,6 +16,8 @@ function exibirTextoNaTela(tag,texto) {
         let mensagemTentativa = `Você descobriu o número secreto com ${tentativa} ${palavraTentativa}`;
         exibirTextoNaTela("h1", "Acertou!");
         exibirTextoNaTela("p", mensagemTentativa);
+        let botaoNovoJogo = document.getElementById("reiniciar");
+        botaoNovoJogo.removeAttribute("disabled");
     }else {
         if (chute > numeroSecreto){
             exibirTextoNaTela("p","O número secreto é menor");
